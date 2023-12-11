@@ -6,11 +6,15 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "^7",
-    "express": "^4"
+    "@sap/cds": "^7.4.2",
+    "@sap/cds-hana": "^2",
+    "@sap/xssec": "^3",
+    "express": "^4",
+    "passport": "^0.7.0"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
     "@sap/ux-specification": "^1.120.0"
   },
   "scripts": {
@@ -19,5 +23,13 @@
   },
   "sapux": [
     "app/bookshop"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "[production]": {
+        "db": "hana",
+        "auth": "xsuaa"
+      }
+    }
+  }
 }

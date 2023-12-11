@@ -13,6 +13,7 @@ annotate service.Books with @(
         {
             $Type : 'UI.DataField',
             Value : stock,
+            Criticality : criticality,
         },
         {
             $Type : 'UI.DataField',

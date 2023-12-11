@@ -1,1 +1,27 @@
-{}
+{
+    "[development]": {
+    "auth": {
+    "passport": {
+    "strategy": "mock",
+    "users": {
+    "viewer@ibm.com": {
+    "password": "initial",
+    "ID": "viewer",
+    "userAttributes": {
+    "email": "viewer@ibm.com"
+    },
+    "roles": ["Viewer"]
+    },
+    "admin@ibm.com": {
+    "password": "initial",
+    "ID": "admin",
+    "userAttributes": {
+    "email": "admin@ibm.com"
+    },
+    "roles": ["Admin"]
+    }
+    }
+    }
+    }
+    }
+    }
